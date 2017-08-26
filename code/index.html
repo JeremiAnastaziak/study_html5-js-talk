@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HTML5 GEOLOCATION</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Lato');
+
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+		svg {
+			border: 1px solid black;
+		}
+		fieldset {
+			display: flex;
+			flex-direction: column;
+			width: 2	00px;
+		}
+		legend {
+			font-size: 30px;
+		}
+		input {
+			margin-bottom: 20px;
+		}
+		label {
+			font-size: 20px;
+		}
+		form {
+			background-color: white;
+			font-size: 20px;
+		}
+		input {
+			font-size: 20px;
+		}
+	</style>
+</head>
+<body>
+	<!--
+	<p>Video example:</p>
+	<video width="300" src="video.mp4" controls>
+	</video>
+	<p>Audio example:</p>
+	<audio src="audio.mp3" controls></audio>
+	-->
+
+
+	<!--<canvas id="canvas" width="150">
+		
+	</canvas>
+
+	<script>
+		const canvas = document.querySelector('#canvas');
+		if (canvas.getContext) {
+			const ctx = canvas.getContext('2d');
+
+			ctx.fillRect(25, 25, 100, 100);
+			ctx.clearRect(45, 45, 60, 60);
+			ctx.strokeRect(50, 50, 50, 50);
+		}
+	</script>
+	-->
+	<!---
+	<svg height="480" width="640">
+	  <rect x="0" y="0" width="640" height="240" style="fill:rgb(255,255,255)" />
+	  <rect x="0" y="240" width="640" height="240" style="fill:rgb(255,0,0)" />
+	</svg>
+	-->
+	<!--
+	<div>
+		<img width="500" height="500" src="light-bulb.png" alt="">
+		<img width="500" height="500" src="light-bulb.svg" alt="">
+	</div>
+	-->
+	<!--<script>
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		}
+
+		function showPosition(position) {
+			document.write('Latitude: '+position.coords.latitude+'<br>Longitude: '+position.coords.longitude);
+		}
+
+	</script>
+	-->
+	<form>
+		<fieldset>
+			<legend>Fromularz kontaktowy</legend>
+
+			<label for="tel">Numer telefonu:</label>
+			<input type="tel"  id="tel" pattern="\d{3}[\-]\d{3}[\-]\d{3}" required autofocus>
+			
+			<label for="tel">Adres url:</label>
+			<input type="url"  id="url" placeholder="Adres url">
+			
+			<label for="range">Range with step = 1:</label>
+			<input type="range"  id="range" step='1' min='0' max='10'>
+
+			<label for="range2">Range with step = 3:</label>
+			<input type="range"  id="range2" step='3' min='0' max='12'>
+
+			<label for="email">E-mail:</label>
+			<input type="email"  id="email" required>
+			
+			<input type="submit" id="submit" >
+		</fieldset>
+	</form>
+	
+
+</body>
+</html>
